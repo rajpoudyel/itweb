@@ -1,0 +1,44 @@
+<!-- This file is used as a form to insert project in to the database   -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset = "utf-8">
+		<title>Project Insert Form</title>
+		<link rel='stylesheet' href='loginLink.css' type='text/css' />
+<link rel="stylesheet" href="link.css">
+<script type="text/javascript" src = "passwordMatching1.js" > </script>
+<style>label{width: 8em; float:left;}
+       input{width:300px;}
+	   b:hover {background: #66ff66;}
+</style>
+	</head>
+	<body>
+	<div style = "height: 400px; width:600px; border:solid black 2px; background-color:lightblue;" class = "container-relative"> 
+     <div class = "container-absolute top-center">
+	    <h2 style = "color:blue"> PROJECT INSERT FORM</h2>
+		</div>
+		<div style = " top:10%;left: 25%;"class = "container-absolute top-center">
+	    <p> Enter data into all the fields and hit INSERT PROJECT button to insert data into our database. </p>
+		</div>
+		 <div style = " top:25%;" class = "container-absolute center">
+
+<form action="project_insertData.php" method="post">
+<label>Project ID: </label><input type="text" size="25" maxlength="50" name ="pid" /> <br>
+<label>Project Name:</label> <input type="text" size="25" maxlength="200" name = "pname"/> <br>
+<label>Start Date: </label><input type="date"  name = "sdate" placeholder= "mm/dd/yyyy"/> <br>
+<label>End Date: </label><input type="date"  name = "edate" placeholder= "mm/dd/yyyy" /> <br>
+<label>Pi: </label><input type="text" size="25" maxlength="200" name = "pi" /> <br>
+<label>Copi: </label><input type="text" size="25" maxlength="200" name = "copi" /> <br>
+ &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<b><input style= "background-color: black; color: white; :hover: green; width:150px;" type="submit" name = "insert" value= "INSERT PROJECT"/>
+</b>
+<b><input style= "background-color: black; color: white; width:150px;" type="reset" name = "reset" value= "CLEAR"/>
+</b>
+</p>
+</form>
+</div>
+<div style= "bottom:10%;left:45%;" class= "container-absolute bottom-center button"> <a style = "color: white" href="myhome.html">HOME </a></div>
+</div>
+</body>
+</html>

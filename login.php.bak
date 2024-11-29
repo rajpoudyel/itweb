@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript form validation - Password Checking</title>
+<link rel='stylesheet' href='loginLink.css' type='text/css' />
+<link rel="stylesheet" href="link.css">
+<script type="text/javascript" src = "passwordMatching1.js" > </script>
+<style>label{width: 8em; float:left;}
+       input{width:200px;}
+</style>
+</head>
+<body>
+<div class="mail">
+<p>Username should be atleast 5 to 20 alphanumeric characters , and password must 
+  contain only word characters, numeric digits, underscore atleast 7 to 15 characters, and first character must be a letter</p>
+<form name= "form1" action = "validateLogin.php" method = "POST"  onSubmit = "return validateEmpty()"/>
+ <label> Email(optional): </label><input type='text' name='email' /><span> Eg.: example@gmail.com</span><br/>
+ <label> Username: </label><input type='text' name='uname' /><br/>
+<label>Password: </label><input type='text' name='pword' /><br/>
+<label>Re-enter Password: </label><input type='text' name='pword1'  /><br/><br/>
+
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+ <input style = "width:100px" type="submit" name="submit" value="Submit"/>&emsp;&emsp;
+ <input style = "width:100px" type="reset" value="Clear" name="reset">
+</form>
+</div>
+<script language="javascript">
+function validateEmpty()
+{
+  loginForm = document.form1;
+  if ((loginForm.uname.value == "") || (loginForm.pword.value == "") || (loginForm.pword1.value == ""))
+  {
+    alert('Please enter values for username and password fields.');
+    return false;
+  }
+  else return true;
+}
+</script>
+</body>
+</html>

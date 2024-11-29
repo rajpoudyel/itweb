@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Login Page</title>
+<link rel='stylesheet' href='loginLink.css' type='text/css' />
+<link rel="stylesheet" href="link.css">
+<script type="text/javascript" src = "passwordMatching1.js" > </script>
+<style>label{width: 8em; float:left;}
+       input{width:200px;}
+</style>
+</head>
+<body>
+<div style = "height: 500px; width:800px; border:solid black 2px; background-color:lightblue;" class = "container-relative"> 
+     <div class = "container-absolute top-center">
+	    <h2 style = "color:blue"> LOGIN FORM</h2>
+		<h4> Login to get access to our Project Management Database.</h4>
+		</div>
+		 <div style = " top:25%;" class = "container-absolute center">
+<form name= "form1" action = "login.php" method = "POST"  onSubmit = "return validateEmpty()"/>
+ <label> Email(optional): </label><input type='text' name='email' /><br/>
+ <label> Username: </label><input type='text' name='uname' /><br/>
+<label>Password: </label><input type='text' name='pword' /><br/>
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+ <input style = "width:100px" type="submit" name="submit" value="LOGIN"/>&emsp;&emsp;
+ <input style = "width:100px" type="reset" value="CLEAR" name="reset">
+</form>
+</div>
+<div style= "bottom:50%; left: 30%" class= "container-absolute bottom-center "> <span style = "color: black;">If you are a new user, or have no login credentials, you need to contact your employer. </span></div>
+<div style= "bottom:35%;" class= "container-absolute bottom-center button"> <a style = "color: white" href="myhome.html">HOME </a></div>
+</div>
+<script language="javascript">
+function validateEmpty()   
+{
+  loginForm = document.form1;
+  if ((loginForm.uname.value == "") || (loginForm.pword.value == "") || (loginForm.pword1.value == ""))
+  {
+    alert('Please enter values for username and password fields. Email is optional');
+    return false;
+  }
+  else return true;
+}
+</script>
+</body>
+</html>

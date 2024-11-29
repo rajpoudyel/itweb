@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript form validation - Password Checking</title>
+<link rel='stylesheet' href='loginLink.css' type='text/css' />
+<link rel="stylesheet" href="link.css">
+<script type="text/javascript" src = "passwordMatching1.js" > </script>
+<style>label{width: 8em; float:left;}
+       input{width:200px;}
+</style>
+</head>
+<body>
+<div style = "height: 500px; width:800px; border:solid black 2px; background-color:lightblue;" class = "container-relative"> 
+     <div class = "container-absolute top-center">
+	    <h2 style = "color:blue"> Registration Form</h2>
+		</div>
+		 <div style = " top:10%;" class = "container-absolute center">
+<p>Username should be atleast 5 to 20 alphanumeric characters ,<br/> and password must 
+  contain atleast one lowercase, one uppercase,<br/> 
+  one number up to 7 to 15 and first character must be a letter, and email example: Eg.: example@gmail.com</p>
+<form name= "form1" action = "validateLogin.php" method = "POST"  onSubmit = "return validateEmpty()"/>
+ <label> Email(optional): </label><input type='text' name='email' /><br/>
+ <label> Username: </label><input type='text' name='uname' /><br/>
+<label>Password: </label><input type='text' name='pword' /><br/>
+<label>Re-enter Password: </label><input type='text' name='pword1'  /><br/><br/>
+
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+ <input style = "width:100px" type="submit" name="submit" value="Submit"/>&emsp;&emsp;
+ <input style = "width:100px" type="reset" value="Clear" name="reset">
+</form>
+</div>
+<div style= "bottom:30%; left: 30%" class= "container-absolute bottom-center "> <span style = "color: black;">If you are new, you need to register to get your login credentials. </span></div>
+<div style= "bottom:15%;" class= "container-absolute bottom-center button"> <a style = "color: white" href="myhome.html">HOME </a></div>
+ <div style= "bottom:15%;" class= "container-absolute bottom-center1 button"> <a style = "color: white" href="loginCreateForm.html">REGISTER </a></div>
+</div>
+<script language="javascript">
+function validateEmpty()
+{
+  loginForm = document.form1;
+  if ((loginForm.uname.value == "") || (loginForm.pword.value == "") || (loginForm.pword1.value == ""))
+  {
+    alert('Please enter values for username and password fields.');
+    return false;
+  }
+  else return true;
+}
+</script>
+</body>
+</html>

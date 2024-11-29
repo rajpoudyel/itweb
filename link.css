@@ -1,0 +1,187 @@
+/*
+
+
+
+*/
+a:link {color: #0000ff;
+       }
+a:visited {color: red;
+          }
+a:hover {background: #66ff66;
+        }
+a:active{color:blue}
+.button {
+  background-color: black;
+  border: 3px solid navy;
+  border-bottom: solid 10px;
+  border-radius: 50px;
+
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: blocK;
+  font-size: 12px;
+  margin: 1px 1px;
+  cursor: pointer;
+box-shadow:25px 25px 50px dimred; 
+}
+.button1 {
+  background-color:none;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-blocK;
+  font-size: 12px;
+  margin: 1px 1px;
+  width:250px;
+}
+.bottom-right {
+               bottom: 2px;
+			   right:20px;
+			   font-size: 16px;
+               } 
+.bottom-left {
+               bottom: 2%;
+			   left:8px;
+			   font-size: 16px;
+			  }  
+.top-left {top: 20px;
+		    left:80px;
+			font-size: 16px;
+		  } 
+.left-center {
+            top: 35%;
+		    left:20%;
+		  } 
+.top-right {top: 15%;
+			right:20px;
+               } 
+
+.center {
+  top: 20%;
+  left: 20%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.top-center {top: 2%;
+	         left: 35%;
+             }
+.top-center1 {
+             top: 100px;
+			  width: 100%;
+			  text-align:center;
+			  font-size:16px;
+             }
+.bottom-center {
+               bottom: 2%;
+			   left:40%;
+			   text-align:center;
+			   font-size: 16px;
+			   } 
+			   .bottom-center1 {
+               bottom: 2%;
+			   left:55%;
+			   text-align:center;
+			   font-size: 16px;
+			   } 
+.container-relative {position: relative;
+                     height:500px;
+}        
+/*container holding text-blocks on the top in absolute position*/
+.container-absolute {position: absolute;}
+.img1{margin:0px;
+    transition:transform 2s;
+	transform:rotate(360deg) scale(1,1);
+}
+.multiculum3{/* setting multicolum to 3*/
+             -webkit-column-count:3;
+			 -moz-column-count:3;
+			 -o-column-count: 3;
+			 column-count:3;
+			 /* setting gap between column*/
+			 -webkit-column-gap:30px;
+			 -moz-column-gap:30px;
+			 -o-column-gap: 30px;
+			 column-gap:30px;
+			 /* adding a line between columns*/
+			 -webkit-column-rule:1px double red;
+			 -moz-column-rule:1px double red;
+			 -o-column-rule: 1px double red;
+			 column-rule:1px double red;
+            }
+.multiculum2{/* setting multicolum to 2*/
+             -webkit-column-count:2;
+			 -moz-column-count:2;
+			 -o-column-count: 2;
+			 column-count:2;
+			 /* setting gap between column*/
+			 -webkit-column-gap:30px;
+			 -moz-column-gap:30px;
+			 -o-column-gap: 30px;
+			 column-gap:30px;
+			 /* adding a line between columns*/
+			 -webkit-column-rule:1px double red;
+			 -moz-column-rule:1px double red;
+			 -o-column-rule: 1px double red;
+			 column-rule:1px double red;
+            }
+.float-left{float: left; margin:5px;}
+.float-right{float:right; margin:5px; }
+.bodybackground-color-blue{background-color:lightblue;}
+.bodybackground-color-pink{background-color:lightpink;}
+.bodybackground-color-green{background-color:lightgreen;} 
+
+<style>
+    {
+        box-sizing: border-box;
+    }
+/* Set additional styling options for the columns */
+    .column {
+    float: left;
+    }
+   .gap{
+	   width:25px;
+       }
+   .gap1{
+	   width:100px;
+       }
+    /* Set width length for the left, right and middle columns */
+    .left {
+    width: 30%;
+    }
+.left1 {
+    width: 20%;
+    }
+.leftExtreme {
+    width: 2%;
+    }
+    .middle {
+    width: 30%;
+    }
+    
+    .right {
+    width: 50%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+.zoom {
+  padding: 0px;
+  transition: transform .2s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(3);
+  /* (400% - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+   
